@@ -13,8 +13,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	torrents := selectTorrents(info)
-	service.Tc = torrents
+	service.Tc = selectTorrents(info)
 	initiateUserCommunication(service.Tc)
 	if finish := service.DownloadChoosenTorrents(); !finish {
 		log.Fatal("Something went wrong while downloading, couldn't wait all files.")

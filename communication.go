@@ -14,12 +14,25 @@ var question = color.New(color.FgCyan).Add(color.Underline)
 var indexer = color.New(color.FgHiBlue)
 var namer = color.New(color.FgHiYellow)
 var answer = color.New(color.Bold).Add(color.Underline)
+var important = color.New(color.Underline).Add(color.FgHiRed)
 
 func printTorrentName(index int, file os.FileInfo) {
 	fmt.Println()
 	indexer.Print(index)
 	fmt.Print(" for ")
 	namer.Print(file.Name())
+}
+
+func printStart(name string) {
+	fmt.Println()
+	important.Print(name)
+	important.Print(" is started downloading!\n")
+}
+
+func printEnd(name string) {
+	fmt.Println()
+	important.Print(name)
+	important.Print(" is finished downloading!\n")
 }
 
 func getAnswers() string {

@@ -34,11 +34,16 @@ func (s *service) DownloadChoosenTorrents() bool {
 	paths := s.Tc.getChoosenPaths()
 	for _, v := range *paths {
 		torrent, err := s.Client.AddTorrentFromFile(v)
+		printStart(torrent.Name())
 		if err != nil {
 			log.Fatal(err)
 		}
 		<-torrent.GotInfo()
 		torrent.DownloadAll()
+		if fin := s.Client.WaitAll(); !fin {
+			log.Fatal("Download interrupted and not finished")
+		}
+		printEnd(torrent.Name())
 	}
 	return s.Client.WaitAll()
 }
