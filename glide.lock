@@ -1,0 +1,96 @@
+hash: c4e50d2f273692365daed1406b8b1e011efcda2457385fa3221b2ac36b9fee2f
+updated: 2017-01-14T17:53:52.245939572+01:00
+imports:
+- name: github.com/anacrolix/dht
+  version: 41eead1aad955d3ba5011a26cde91b571a150404
+  subpackages:
+  - krpc
+- name: github.com/anacrolix/missinggo
+  version: 3a4acd64fabf7ff8b9d5baa5d31be19608178110
+  subpackages:
+  - bitmap
+  - iter
+  - perf
+  - pproffd
+  - prioritybitmap
+  - pubsub
+  - slices
+  - container/xheap
+  - orderedmap
+  - resource
+  - httptoo
+  - inproc
+- name: github.com/anacrolix/sync
+  version: d29d95568d362a0008c1ffbaea39a3449ea67509
+- name: github.com/anacrolix/torrent
+  version: a11df82349a83b042d0884045e4ef478679800ad
+  subpackages:
+  - bencode
+  - iplist
+  - metainfo
+  - mse
+  - peer_protocol
+  - storage
+  - tracker
+  - util
+  - logonce
+  - mmap_span
+- name: github.com/anacrolix/utp
+  version: cb02a8a1ac94501fb8421531cd94d874360d35b1
+- name: github.com/boltdb/bolt
+  version: a705895fdad108f053eae7ee011ed94a0541ee13
+- name: github.com/bradfitz/iter
+  version: 454541ec3da2a73fc34fd049b19ee5777bf19345
+- name: github.com/dustin/go-humanize
+  version: 7a41df006ff9af79a29f0ffa9c5f21fbe6314a2d
+- name: github.com/edsrzf/mmap-go
+  version: 935e0e8a636ca4ba70b713f3e38a19e1b77739e8
+- name: github.com/fatih/color
+  version: 34e4ee095d12986a2cef5ddb9aeb3b8cfcfea17c
+- name: github.com/glycerine/go-unsnap-stream
+  version: 87275cecd8e984c5875577d22da7ce8945df780e
+- name: github.com/golang/snappy
+  version: d9eb7a3d35ec988b8585d4a0068e462c27d28380
+- name: github.com/google/btree
+  version: 316fb6d3f031ae8f4d457c6c5186b9e3ded70435
+- name: github.com/mattn/go-colorable
+  version: d228849504861217f796da67fae4f6e347643f15
+- name: github.com/mattn/go-isatty
+  version: 30a891c33c7cde7b02a981314b4228ec99380cca
+- name: github.com/mattn/go-sqlite3
+  version: eff6379ba09b2fca7aa8216f2132d4c170ed9d46
+- name: github.com/mschoch/smat
+  version: 90eadee771aeab36e8bf796039b8c261bebebe4f
+- name: github.com/philhofer/fwd
+  version: 98c11a7a6ec829d672b03833c3d69a7fae1ca972
+- name: github.com/RoaringBitmap/roaring
+  version: 943a2da912da2faacc263c82956d40de0841f15d
+- name: github.com/ryszard/goskiplist
+  version: 2dfbae5fcf46374f166f8969cb07e167f1be6273
+  subpackages:
+  - skiplist
+- name: github.com/spaolacci/murmur3
+  version: 0d12bf811670bf6a1a63828dfbd003eded177fce
+- name: github.com/tinylib/msgp
+  version: 362bfb3384d53ae4d5dd745983a4d70b6d23628c
+  subpackages:
+  - msgp
+- name: github.com/tylertreat/BoomFilters
+  version: 6cd71b875c8a3852dc50277e5e9bcf9473a8ad66
+- name: github.com/willf/bitset
+  version: 5c3c0fce48842b2c0bbaa99b4e61b0175d84b47c
+- name: github.com/willf/bloom
+  version: 278d7d8b14584245fe9f826a30e48d4301bd6fd9
+- name: golang.org/x/net
+  version: f2499483f923065a842d38eb4c7f1927e6fc6e6d
+  subpackages:
+  - context
+- name: golang.org/x/sys
+  version: d75a52659825e75fff6158388dddc6a5b04f9ba5
+  subpackages:
+  - unix
+- name: golang.org/x/time
+  version: f51c12702a4d776e4c1fa9b0fabab841babae631
+  subpackages:
+  - rate
+testImports: []
