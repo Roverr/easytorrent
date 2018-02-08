@@ -6,3 +6,7 @@ osx:
 
 windows:
 	GOOS=windows GOARCH=amd64 go build -o="bin/easytorrent-windows-amd64.exe"
+
+PHONY: all
+all:
+	$(MAKE) linux && $(MAKE) osx && $(MAKE) windows
